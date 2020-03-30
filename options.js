@@ -8,10 +8,10 @@ const options = {
     reconnect: true
   },
   identity: {
-    username: "ENTER BOT ACC HERE", //Username of Bot account
-    password: "Enter OATH HERE" //OATH key from twitch
+    username: "boondock_bot", //Username of Bot account
+    password: "oauth:csko239in3lb06tmodppybf2dn1glp" //OATH key from twitch
   },
-  channels: ['ENTER CHANNEL NAME HERE'] //Channels the bot runs on, can be multiple
+  channels: ['Jboondock'] //Channels the bot runs on, can be multiple
 };
 
 
