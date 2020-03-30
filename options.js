@@ -1,4 +1,4 @@
-//Created by Jboondock
+//Created by Jboondock :)
 
 const options = {
   options: {
@@ -9,9 +9,9 @@ const options = {
   },
   identity: {
     username: "boondock_bot", //Username of Bot 
-    password: "oauth:di4gfbtn7gn8ol5yl3vltxqwxrmvnq" //OATH key from twitch
+    password: "Enter OATH Here" //OATH key from twitch
   },
-  channels: ['Enter Channel Name here'] //Channels the bot runs on, can be multiple
+  channels: ['Jboondock'] //Channels the bot runs on, can be multiple
 };
 
 
