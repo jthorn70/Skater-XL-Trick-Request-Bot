@@ -9,6 +9,7 @@ I would recommend opening this entire repo in VS Code or your preffered editor. 
 - install [node.js](https://nodejs.org/en/)
 - Clone the repository to preferred destination
 - Retrieve your OATH token from twitch [here](https://twitchapps.com/tmi/)
+- add OATH token and channel names to options.js
 - In the command line, navigate to the destination of the cloned repository
 - type **npm install**
 - type **node bot.js**
