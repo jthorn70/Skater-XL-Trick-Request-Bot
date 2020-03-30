@@ -1,0 +1,19 @@
+{
+  "name": "skater-xl-trick-request-bot",
+  "version": "1.0.0",
+  "description": "TTS trick request bot for twitch.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jthorn70/Skater-XL-Trick-Request-Bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jthorn70/Skater-XL-Trick-Request-Bot/issues"
+  },
+  "homepage": "https://github.com/jthorn70/Skater-XL-Trick-Request-Bot#readme"
+}
