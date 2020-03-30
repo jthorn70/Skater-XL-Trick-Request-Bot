@@ -6,8 +6,9 @@ TTS trick request bot for twitch.
 I would recommend opening this entire repo in VS Code or your preffered editor. I use VS Code beacuse you can run the terminal in the same window and edit the options.js file.
 
 # How to Install
-- install node.js [Link](https://nodejs.org/en/)
+- install [node.js](https://nodejs.org/en/)
 - Clone the repository to preferred destination
+- Retrieve your OATH token from twitch [here](https://twitchapps.com/tmi/)
 - In the command line, navigate to the destination of the cloned repository
 - type **npm install**
 - type **node bot.js**
