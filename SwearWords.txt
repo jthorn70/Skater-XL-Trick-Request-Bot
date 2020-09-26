@@ -1,0 +1,11 @@
+Add words you want to be filtered out from being read by the text to speach bot
+after each word, escape to a new line.
+example:
+
+
+word one
+word two
+word three
+...
+...
+etc.
