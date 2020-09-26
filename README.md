@@ -16,3 +16,10 @@ I would recommend opening this entire repo in VS Code or your preffered editor. 
 - Enjoy!
 
 If you have any issues please let me know! 
+
+
+
+# Changelong
+-9/26/2020: Added custom word filter via txt file
+            Added commands for adding, removing, loading bans for TTS
+            
