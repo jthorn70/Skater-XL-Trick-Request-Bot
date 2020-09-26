@@ -8,7 +8,7 @@ const path = require('path'); //file path
 const readline = require('readline'); //read files
 
 
-const writeStream = fs.createWriteStream('Tricks.txt'); // creates txt file
+const writeStream = fs.createWriteStream('Tricks.txt');  // creates txt file
 const pathName = writeStream.path;  // pathname
 
 
