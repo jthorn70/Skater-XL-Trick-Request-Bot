@@ -165,13 +165,14 @@ function onMessageHandler (target, tags, msg, self) {
 
 
     // load bans in case list is empty                            //Change These names for name validation
-    if (commandName.startsWith( "!loadbans") && (tags.username == "Jboondock" || "Jbooogie" || "N0talecks" || "medium_burnt" )) {
+    if (commandName.startsWith( "!loadbans") && (tags.username == target)) {
       loadBans();
+      client.say(target,"Ban list loaded.")
     }
 
 
     // add name to ban list                                    //Change These names for name validation
-    if (commandName.startsWith("!addban") && (tags.username == "Jboondock" || "Jbooogie" || "N0talecks" || "medium_burnt" )) {
+    if (commandName.startsWith("!addban") && (tags.username == target || "Jboondock")) {
       let banToAdd= String(banName)
       addBan(banToAdd);
       client.say(target,`@${banToAdd}, you have been banned from using trick requests`)
@@ -185,7 +186,7 @@ function onMessageHandler (target, tags, msg, self) {
 
     }
     // remove name from ban list                               //Change These names for name validation
-    if (commandName.startsWith("!remban") && (tags.username == "Jboondock" || "Jbooogie" || "N0talecks"|| "medium_burnt" )) {
+    if (commandName.startsWith("!remban") && (tags.username == target || "Jboondock")) {
       let banToRem= String(banName)
       removeBan(banToRem);
       client.say(target,`@${banToRem}, you have been  un-banned from using trick requests`)
@@ -217,7 +218,7 @@ function onMessageHandler (target, tags, msg, self) {
     }
 
     // Make the bot attack!                                     //Change These names for name validation
-  if (commandName.startsWith("BOT ATTACK") && (tags.username == "Jboondock" || "Jbooogie")) {
+  if (commandName.startsWith("BOT ATTACK") && (tags.username == target || "Jboondock")) {
     client.say(target, "/me MrDestructoid  FIRING DEATH RAY MrDestructoid")
     let timerId = setTimeout(() => client.say(target, "/me MrDestructoid hehe ur all ded MrDestructoid")
       , 3000);
