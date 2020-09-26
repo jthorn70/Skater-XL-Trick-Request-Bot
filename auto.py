@@ -5,5 +5,5 @@ path=os.getcwd()
 print("Path: ",path)
 
 #runs bot.js file for you
-os.system("node bot.js")
+os.system("node refactor.js")
 
