@@ -84,7 +84,7 @@ function onMessageHandler (target, tags, msg, self) {
     let trickName=commandName.substring(7);    //get trickname
     let banName=commandName.substring(8);    // get name to ban from bot
     const trickFormatted=addNewlines(trickName)    // request with \n
-    const insults = ["Some asshole named ","A big stinky man called ","The legend known as ", "hey boogie, ", "yo bro, ", "ayyyyy, ", "jboogie? are you there? ", "Once upon a time, "];    //array of insults
+    const insults = ["Some asshole named ","A big stinky man called ","The legend known as ", "yo bro, ", "ayyyyy, ", "Hello? are you there? ", "Once upon a time, "];    //array of insults
     const suffix = ["what a garbage trick.", "that's probably gonna suck.", "even i could do that one.", "can't these people come up with anything better?" ];    //array of suffix
     const nbSongs = ["photograph","how you remind me","if everyone cared","rockstar"];    //Nickelback array
     const randNBsong = nbSongs[Math.floor(Math.random()*nbSongs.length)];    //random nickelback song
@@ -164,13 +164,13 @@ function onMessageHandler (target, tags, msg, self) {
     }
 
 
-    // load bans in case list is empty
+    // load bans in case list is empty                            //Change These names for name validation
     if (commandName.startsWith( "!loadbans") && (tags.username == "Jboondock" || "Jbooogie" || "N0talecks" || "medium_burnt" )) {
       loadBans();
     }
 
 
-    // add name to ban list
+    // add name to ban list                                    //Change These names for name validation
     if (commandName.startsWith("!addban") && (tags.username == "Jboondock" || "Jbooogie" || "N0talecks" || "medium_burnt" )) {
       let banToAdd= String(banName)
       addBan(banToAdd);
@@ -184,7 +184,7 @@ function onMessageHandler (target, tags, msg, self) {
       }));
 
     }
-    // remove name from ban list
+    // remove name from ban list                               //Change These names for name validation
     if (commandName.startsWith("!remban") && (tags.username == "Jboondock" || "Jbooogie" || "N0talecks"|| "medium_burnt" )) {
       let banToRem= String(banName)
       removeBan(banToRem);
@@ -198,7 +198,7 @@ function onMessageHandler (target, tags, msg, self) {
       }));
 
     }
-    // display banned users in chat
+    // display banned users in chat                              //Change These names for name validation
     if (commandName.startsWith("!banlist") && (tags.username == "Jboondock" || "Jbooogie" || "N0talecks"|| "medium_burnt" )) {
       if(banList.length<=0){
         client.say(target,`The ban list is empty.`)
@@ -216,7 +216,7 @@ function onMessageHandler (target, tags, msg, self) {
       client.say(target,`/me @${vibeTarget} has ${randVibe}`)
     }
 
-    // Make the bot attack!
+    // Make the bot attack!                                     //Change These names for name validation
   if (commandName.startsWith("BOT ATTACK") && (tags.username == "Jboondock" || "Jbooogie")) {
     client.say(target, "/me MrDestructoid  FIRING DEATH RAY MrDestructoid")
     let timerId = setTimeout(() => client.say(target, "/me MrDestructoid hehe ur all ded MrDestructoid")
